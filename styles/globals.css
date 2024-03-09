@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input,textarea, select{
+    @apply border-2 border-highlight bg-white  rounded-md px-1 w-full;
+    @apply mb-2;
+}
+input:focus, textarea:focus {
+    @apply border-gray-50 bg-primary text-white;
+}
+
+h1 {
+    @apply text-gray-800 mb-4 text-xl;
+}
+
+label {
+    @apply text-gray-600 text-sm;
+}
+
+.btn-primary {
+    @apply bg-primary text-highlight px-4 py-1 rounded-lg shadow-sm;
+}
+table.basic {
+    @apply w-full mr-2;
+    border-collapse: separate;
+    border-spacing: 8px; /* Adjust this value to control spacing between cells */
+}
+table.basic thead tr td {
+    @apply bg-bgGray text-secondary rounded-lg py-2 px-4 gap-2; /* Increased vertical padding */
+}
+table.basic tr td {
+    @apply bg-bgGray text-gray-500 rounded-lg py-2 px-4 gap-2; /* Increased vertical padding and horizontal padding for more space */
+}
+table.basic a {
+    @apply bg-bgGray text-secondary text-sm py-1 px-2 rounded-lg inline-flex items-center gap-1 mr-2 mb-1
+}
+.btn-red {
+    @apply bg-red-200 text-red-600 px-4 py-1 rounded-lg shadow-sm;
+}
+
+.btn-def {
+    @apply bg-white text-gray-500 hover:bg-secondary hover:text-white px-4 py-1 rounded-lg border border-gray-200 shadow-sm;
+}
+.btn-end {
+    @apply text-gray-500 bg-bgGray hover:bg-secondary hover:text-white rounded-lg py-1 px-1 justify-end;
+}
+table.basic .btn-primary {
+    @apply bg-primary text-highlight px-4 py-1 rounded-lg shadow-sm;
+}
+table.basic .btn-red {
+    @apply bg-red-200 text-red-600 px-4 py-1 rounded-lg shadow-sm;
+}
+table.basic .btn-edit {
+    @apply bg-highlight text-gray-500 hover:bg-secondary hover:text-white px-4 py-1 rounded-lg border border-gray-200 shadow-sm;
+}
+table.basic .btn-delete {
+    @apply bg-highlight text-gray-500 hover:bg-red-800 hover:text-white px-4 py-1 rounded-lg border border-gray-200 shadow-sm;
+}
+table.basic .btn-end {
+    @apply text-gray-500 bg-bgGray rounded-lg py-1 px-1 justify-end;
+}
+
+img{
+    max-height: 100%;
+}
+.btn-link {
+    @apply w-6 h-6 text-gray-500 bg-bgGray hover:bg-secondary hover:text-white rounded-lg  justify-end;
+}
